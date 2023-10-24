@@ -8,6 +8,7 @@ This Python script scrapes the classic Clinical Trials website to retrieve and s
 - Extracts **Intervention Treatments** associated with the trials.
 - Generates CSV files for each NCT number detailing the outcomes.
 - Organizes outcomes under separate folders based on the **Intervention/Treatment** name.
+- In theory, you can change this and play with it as you like. This is just what I wanted / liked.
 
 ## Requirements 📦
 

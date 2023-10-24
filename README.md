@@ -1,14 +1,13 @@
-# ct_scraper
-# Clinical Trials Scraper 🌐💉
 
-This Python script scrapes the classic Clinical Trials website to retrieve and save outcome measures based on the given list of NCT numbers.
+# Generic Clinical Trials Scraper 🌐💉
+
+This Python script is designed to scrape clinical trials data from various online sources to retrieve and save outcome measures based on the given trial identification numbers.
 
 ## Features 🌟
-- Retrieves **Primary and Secondary Outcome Measures** for specific NCT numbers.
+- Retrieves **Primary and Secondary Outcome Measures** for specific trial identification numbers.
 - Extracts **Intervention Treatments** associated with the trials.
-- Generates CSV files for each NCT number detailing the outcomes.
+- Generates CSV files for each trial number detailing the outcomes.
 - Organizes outcomes under separate folders based on the **Intervention/Treatment** name.
-- In theory, you can change this and play with it as you like. This is just what I wanted / liked.
 
 ## Requirements 📦
 
@@ -46,12 +45,12 @@ This Python script scrapes the classic Clinical Trials website to retrieve and s
 
 5. **Provide inputs**:
     - First, enter a project name. This will be used as the root directory where all data will be saved.
-    - Next, provide a list of NCT numbers you want to scrape. The NCT numbers can be comma and/or space-separated.
+    - Next, provide a list of trial identification numbers you want to scrape. These numbers can be comma and/or space-separated.
 
-6. Sit back and relax ☕️! The script will process each NCT number, create necessary directories, and save CSV files for the outcomes. There's a random delay of 1-2 seconds between processing each NCT number to mimic human behavior and reduce the chance of being detected/blocked.
+6. Sit back and relax ☕️! The script will process each trial number, create necessary directories, and save CSV files for the outcomes. There's a random delay of 1-2 seconds between processing each number to mimic human behavior and reduce the chance of being detected/blocked.
 
 ## Notes 📝
-- The script uses the `classic.clinicaltrials.gov` URL. Ensure it's accessible from your location.
+- Ensure the target website or source is accessible from your location.
 - Be aware of potential changes to the website's structure, which might affect the scraper's performance.
 - Always respect the website's `robots.txt` and terms of use.
 

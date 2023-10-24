@@ -9,6 +9,7 @@ This Python script is designed to scrape clinical trials data from various onlin
 - Extracts **Intervention Treatments** associated with the trials.
 - Generates CSV files for each trial number detailing the outcomes.
 - Organizes outcomes under separate folders based on the **Intervention/Treatment** name.
+- You can edit / add to it to suit your needs.
 
 ## Requirements 📦
 

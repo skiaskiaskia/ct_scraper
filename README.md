@@ -1,15 +1,15 @@
 
+# CT Scraper: Advanced Clinical Trials Data Extraction 🌐💉
 
-# Generic Clinical Trials Scraper 🌐💉
-
-This Python script is designed to scrape clinical trials data from various online sources to retrieve and save outcome measures based on given trial identification numbers.
+An advanced Python script designed to scrape clinical trials data from various online platforms. The tool aims to collect and organize outcome measures and intervention treatments based on trial identification numbers (NCT numbers).
 
 ## Features 🌟
-- Retrieves **Primary and Secondary Outcome Measures** for specific trial identification numbers.
+
+- Retrieves **Primary and Secondary Outcome Measures** for specific NCT numbers.
 - Extracts **Intervention Treatments** associated with the trials.
-- Generates CSV files for each trial number detailing the outcomes.
-- Organizes outcomes under separate folders based on the **Intervention/Treatment** name.
-- You can edit / add to it to suit your needs.
+- Generates more detailed CSV files for each trial number, including unique codes for primary and secondary outcomes.
+- Organizes data under separate folders based on **Intervention/Treatment** names.
+- Option to import NCT numbers from a text file for batch processing.
 
 ## Requirements 📦
 
@@ -23,7 +23,9 @@ This Python script is designed to scrape clinical trials data from various onlin
     - `os`
     - `sys`
 
-## How to use? 🚀
+## Quick Start 🚀
+
+### Installation
 
 1. **Clone the repository**:
     ```bash
@@ -40,29 +42,35 @@ This Python script is designed to scrape clinical trials data from various onlin
     pip install -r requirements.txt
     ```
 
-4. **Run the script**:
+### Usage
+
+1. **Run the script**:
     ```bash
-    python ct_scraper.py
+    python3 ct_scraper.py
     ```
 
-5. **Provide inputs**:
-    - First, enter a project name. This will be used as the root directory where all data will be saved.
-    - Next, provide a list of trial identification numbers you want to scrape. These numbers can be comma and/or space-separated.
+2. **Provide Inputs**:
+    - Enter a project name to act as the root directory for storing the scraped data.
+    - Choose the input method for NCT numbers (either manually or from a text file).
 
-6. Sit back and relax ☕️! The script will process each trial number, create necessary directories, and save CSV files for the outcomes. There's a random delay of 1-2 seconds between processing each number to mimic human behavior and reduce the risk of being detected/blocked.
+3. **Automated Scraping**:
+    - The script will go through each NCT number, create necessary directories, and save the detailed CSV files for each trial.
+
+4. Sit back and relax ☕️! There's a random delay of 1-2 seconds between each request to minimize the risk of being detected/blocked.
 
 ## Notes 📝
-- Ensure the target website or source is accessible from your location.
-- Be aware of potential changes to the website's structure, which might affect the scraper's performance.
-- Always respect the website's `robots.txt` and terms of use.
 
-## Contribution 💡
+- Make sure the target platform is accessible from your location.
+- Be aware that the website's structure might change, affecting the scraper's performance.
+- Always abide by the platform's terms of use and `robots.txt`.
 
-Feel free to fork, improve, raise issues, or submit pull requests. Contributions are always welcome! 💖
+## Contributions 💡
+
+Contributions are welcome! Feel free to fork, raise issues, or submit pull requests.
 
 ## Disclaimer ⚠️
 
-This tool is meant for educational purposes only. Ensure you have the rights to scrape a website before proceeding. The author is not responsible for any misuse or damages that may arise from using this tool.
+This tool is intended for educational purposes only. Ensure you have the rights to scrape the website before proceeding. The author is not responsible for any misuse or damages resulting from the use of this tool.
 
 ---
 
